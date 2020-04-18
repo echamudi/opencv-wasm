@@ -28,7 +28,9 @@ npm install opencv-wasm
 
 Because this OpenCV is the same as the compiled version for OpenCV.js, you can use almost the same documentation at the web: https://docs.opencv.org/3.4/d5/d10/tutorial_js_root.html
 
-There are some minor initialization changes, as this module will be loaded synchronously. You can check the files under `examples` folder for some use cases.
+There are some minor initialization changes, because this module will be loaded synchronously instead of the OpenCV's default (asynchronously). 
+
+You can check the files inside [examples](https://github.com/ezhmd/opencv-wasm/tree/master/examples) folder for some use cases.
 
 ## Error Handling
 
@@ -43,6 +45,12 @@ try {
     console.log(cvErrorPrinter(cv, err));
 }
 ```
+
+## Authors
+
+* **Ezzat Chamudi** - [ezhmd](https://github.com/ezhmd)
+
+See also the list of [contributors](https://github.com/ezhmd/opencv-wasm/graphs/contributors) who participated in this project.
 
 ## License
 
