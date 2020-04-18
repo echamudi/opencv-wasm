@@ -1,3 +1,3 @@
-const cv = require('../');
+const { cv } = require('../');
 
 console.log(cv.getBuildInformation());

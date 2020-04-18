@@ -1,7 +1,7 @@
-// code is taken from https://docs.opencv.org/master/dc/de6/tutorial_js_nodejs.html
+// code is modified from from https://docs.opencv.org/master/dc/de6/tutorial_js_nodejs.html
 
 const Jimp = require('jimp');
-const cv = require('../');
+const { cv } = require('../');
 
 (async () => {
     let jimpSrc = await Jimp.read('./image-sample-1.jpg');
