@@ -1,17 +1,13 @@
 # OpenCV-WASM
 
-Precompiled OpenCV 4.3.0 to JavaScript + WebAssembly for node.js environment
+Precompiled OpenCV 4.3.0 to JavaScript + WebAssembly for node.js environment.
 
-<!--
 In this WASM compiled OpenCV, there's no need to have OpenCV installed in the machine or using node-gyp.
-The entire OpenCV is already inside this package.
+The entire OpenCV is already inside this package (opencv.js and opencv.wasm).
 
-add instalation guide
+This compiled OpenCV has been tested with the testing tool from OpenCV with the result as follows:
 
-examples
--->
-
-<!--
+```
 Test result with node v12.16.2 LTS
 
 Global summary:
@@ -21,7 +17,32 @@ Global summary:
 │ 1     │ 31    │ 547        │ 0      │ 547    │ 1070    │
 └───────┴───────┴────────────┴────────┴────────┴─────────┘
 0 failed, 547 passed
--->
+```
+
+## Installation
+```
+npm install opencv-wasm
+```
+
+## Usage
+
+Because this OpenCV is the same as the compiled version for OpenCV.js, you can use almost the same documentation at the web: https://docs.opencv.org/3.4/d5/d10/tutorial_js_root.html
+
+There are some minor initialization changes, as this module will be loaded synchronously. You can check the files under `examples` folder for some use cases.
+
+## Error Handling
+
+By default, mistakes in code will produce error code. You can use the following snippet to translate the error code into meaningful statement from OpenCV.
+
+```js
+const cv = require('opencv-wasm');
+
+try {
+    // Your OpenCV
+} catch (err) {
+    console.log(cvErrorPrinter(cv, err));
+}
+```
 
 ## License
 
