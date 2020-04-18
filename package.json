@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/ezhmd/opencv-wasm#readme",
   "devDependencies": {
-    "jimp": "^0.10.2"
+    "canvas": "^2.6.1",
+    "jimp": "^0.10.2",
+    "jsdom": "^16.2.2"
   }
 }
