@@ -48,6 +48,6 @@ function installDOM() {
         writeFileSync('temp.png', canvas.toBuffer('image/png'));
 
     } catch (err) {
-        console.log(cvErrorPrinter(err, cv));
+        console.log(cvErrorPrinter(cv, err));
     }
 })();
