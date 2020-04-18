@@ -7,7 +7,8 @@ git checkout 4.3.0
 #         flags += "-s SINGLE_FILE=0 "
 docker run --rm --workdir /code -v "$PWD":/code "trzeci/emscripten:sdk-tag-1.38.32-64bit" python ./platforms/js/build_js.py build_wasm --build_wasm --build_test
 
-# before continuing, beautify the js using js-beautify and separate the wasm file using seperateBinaryFile.js
+# before continuing, beautify opencv.js using js-beautify and separate the wasm file using seperateBinaryFile.js
+# update the variable in as ==> var wasmBinaryFile = "./opencv.wasm";
 
 # test (use node LTS)
 cd build_wasm/bin
