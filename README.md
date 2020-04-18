@@ -5,11 +5,22 @@ Precompiled OpenCV 4.3.0 to JavaScript + WebAssembly for node.js environment
 <!--
 In this WASM compiled OpenCV, there's no need to have OpenCV installed in the machine or using node-gyp.
 The entire OpenCV is already inside this package.
-Works best in node 8 LTS/carbon. 
 
 add instalation guide
 
 examples
+-->
+
+<!--
+Test result with node v12.16.2 LTS
+
+Global summary:
+┌───────┬───────┬────────────┬────────┬────────┬─────────┐
+│ Files │ Tests │ Assertions │ Failed │ Passed │ Runtime │
+├───────┼───────┼────────────┼────────┼────────┼─────────┤
+│ 1     │ 31    │ 547        │ 0      │ 547    │ 1070    │
+└───────┴───────┴────────────┴────────┴────────┴─────────┘
+0 failed, 547 passed
 -->
 
 ## License
