@@ -1,6 +1,6 @@
 module.exports = {
     cv: require('./opencv.js'),
-    cvErrorPrinter: function (cv, err) {
+    cvTranslateError: function (cv, err) {
         // Code modified from OpenCV TryIt playground
         // https://docs.opencv.org/3.4/d0/d84/tutorial_js_usage.html
 
