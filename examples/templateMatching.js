@@ -1,7 +1,7 @@
 const { Canvas, createCanvas, Image, ImageData, loadImage } = require('canvas');
 const { JSDOM } = require('jsdom');
 const { writeFileSync } = require('fs');
-const { cv, cvErrorPrinter } = require('../');
+const { cv, cvTranslateError } = require('../');
 
 function installDOM() {
     const dom = new JSDOM();
@@ -48,6 +48,6 @@ function installDOM() {
         writeFileSync('temp.png', canvas.toBuffer('image/png'));
 
     } catch (err) {
-        console.log(cvErrorPrinter(cv, err));
+        console.log(cvTranslateError(cv, err));
     }
 })();
