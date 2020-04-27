@@ -37,10 +37,10 @@ You can check the files inside [examples](https://github.com/ezhmd/opencv-wasm/t
 By default, mistakes in code will produce error code. You can use the following snippet to translate the error code into meaningful statement from OpenCV.
 
 ```js
-const { cv, cvTranslateError } = require('../');
+const { cv, cvTranslateError } = require('opencv-wasm');
 
 try {
-    // Your OpenCV
+    // Your OpenCV code
 } catch (err) {
     console.log(cvTranslateError(cv, err));
 }
