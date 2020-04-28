@@ -9,6 +9,10 @@
   "scripts": {
     "test": "npx mocha ./test/test.js"
   },
+  "files": [
+    "opencv.js",
+    "opencv.wasm"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://ezhmd@github.com/ezhmd/opencv-wasm.git"
