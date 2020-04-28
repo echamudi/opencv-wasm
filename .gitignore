@@ -105,3 +105,6 @@ dist
 
 opencv
 examples/temp.png
+
+examples/test-output/*
+!examples/test-output/.gitkeep

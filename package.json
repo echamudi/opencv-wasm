@@ -1,14 +1,18 @@
 {
   "name": "opencv-wasm",
-  "version": "4.3.0-0.3.0",
+  "version": "4.3.0-0.4.0",
   "description": "Precompiled OpenCV 4.3.0 to JavaScript + WebAssembly for node.js environment",
   "main": "index.js",
   "directories": {
     "example": "examples"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx mocha ./test/test.js"
   },
+  "files": [
+    "opencv.js",
+    "opencv.wasm"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://ezhmd@github.com/ezhmd/opencv-wasm.git"
@@ -21,7 +25,10 @@
   "homepage": "https://github.com/ezhmd/opencv-wasm#readme",
   "devDependencies": {
     "canvas": "^2.6.1",
+    "chai": "^4.2.0",
     "jimp": "^0.10.2",
-    "jsdom": "^16.2.2"
+    "jsdom": "^16.2.2",
+    "mocha": "^7.1.2",
+    "pixelmatch": "^5.2.0"
   }
 }

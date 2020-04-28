@@ -1,23 +1,18 @@
 # OpenCV-WASM
 
+[![Build Status](https://travis-ci.org/ezhmd/opencv-wasm.svg?branch=master)](https://travis-ci.org/ezhmd/opencv-wasm)
+
 Precompiled OpenCV 4.3.0 to JavaScript + WebAssembly for node.js environment.
 
 In this WASM compiled OpenCV, there's no need to have OpenCV installed in the machine or using node-gyp.
 The entire OpenCV is already inside this package (opencv.js and opencv.wasm).
 
-This compiled OpenCV has been tested with the testing tool from OpenCV with the result as follows:
+## Examples
 
-```
-Test result with node v12.16.2 LTS
-
-Global summary:
-┌───────┬───────┬────────────┬────────┬────────┬─────────┐
-│ Files │ Tests │ Assertions │ Failed │ Passed │ Runtime │
-├───────┼───────┼────────────┼────────┼────────┼─────────┤
-│ 1     │ 31    │ 547        │ 0      │ 547    │ 1070    │
-└───────┴───────┴────────────┴────────┴────────┴─────────┘
-0 failed, 547 passed
-```
+| Code | Input | Output |
+|---|---|---|
+| [dilation.js](https://github.com/ezhmd/opencv-wasm/blob/master/examples/dilation.js) | ![image sample 1](https://github.com/ezhmd/opencv-wasm/blob/develop/examples/input/image-sample-1.jpg?raw=true) | ![dilation](https://github.com/ezhmd/opencv-wasm/blob/develop/examples/expected-output/dilation.png?raw=true) |
+| [templateMatching.js](https://github.com/ezhmd/opencv-wasm/blob/master/examples/templateMatching.js) | source:<br>![image sample 2](https://github.com/ezhmd/opencv-wasm/blob/develop/examples/input/image-sample-2.png?raw=true) <br>template:<br> ![image sample 2 template](https://github.com/ezhmd/opencv-wasm/blob/develop/examples/input/image-sample-2-template.png?raw=true) | ![template matching](https://github.com/ezhmd/opencv-wasm/blob/develop/examples/expected-output/template-matching.png?raw=true) |
 
 ## Installation
 ```
@@ -37,10 +32,10 @@ You can check the files inside [examples](https://github.com/ezhmd/opencv-wasm/t
 By default, mistakes in code will produce error code. You can use the following snippet to translate the error code into meaningful statement from OpenCV.
 
 ```js
-const { cv, cvTranslateError } = require('../');
+const { cv, cvTranslateError } = require('opencv-wasm');
 
 try {
-    // Your OpenCV
+    // Your OpenCV code
 } catch (err) {
     console.log(cvTranslateError(cv, err));
 }
