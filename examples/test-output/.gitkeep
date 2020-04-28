@@ -1,0 +1,2 @@
+This folder is used for containting the test temporary results.
+You can initiate the test by running "npm test" in terminal.

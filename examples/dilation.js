@@ -4,7 +4,7 @@ const Jimp = require('jimp');
 const { cv } = require('../');
 
 (async () => {
-    let jimpSrc = await Jimp.read('./image-sample-1.jpg');
+    let jimpSrc = await Jimp.read(__dirname + '/input/image-sample-1.jpg');
 
     var src = cv.matFromImageData(jimpSrc.bitmap);
     
@@ -18,7 +18,8 @@ const { cv } = require('../');
         height: dst.rows,
         data: Buffer.from(dst.data)
     })
-        .write('temp.png');
+
+    .write(__dirname + '/test-output/dilation-output.png');
     src.delete();
     dst.delete();
 })();
