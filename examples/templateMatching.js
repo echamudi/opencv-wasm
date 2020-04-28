@@ -45,7 +45,7 @@ function installDOM() {
     
         const canvas = createCanvas(src.cols, src.rows);
         cv.imshow(canvas, src);
-        writeFileSync(__dirname + '/test-output/template-matching-output.png', canvas.toBuffer('image/png'));
+        writeFileSync(__dirname + '/test-output/template-matching.png', canvas.toBuffer('image/png'));
 
     } catch (err) {
         console.log(cvTranslateError(cv, err));

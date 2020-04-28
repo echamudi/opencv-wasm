@@ -19,7 +19,7 @@ const { cv } = require('../');
         data: Buffer.from(dst.data)
     })
 
-    .write(__dirname + '/test-output/dilation-output.png');
+    .write(__dirname + '/test-output/dilation.png');
     src.delete();
     dst.delete();
 })();
