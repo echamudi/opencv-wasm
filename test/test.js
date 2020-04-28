@@ -4,7 +4,7 @@ const { assert } = require('chai');
 const { execSync } = require("child_process");
 
 describe('opencv-wasm', function () {
-    this.timeout(5000);
+    this.timeout(20000);
 
     it('can be loaded', function () {
         assert.isObject(cv);
