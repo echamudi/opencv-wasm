@@ -12,5 +12,5 @@ os:
 install:
   - npm install
 
-  script:
+script:
   - npm test
