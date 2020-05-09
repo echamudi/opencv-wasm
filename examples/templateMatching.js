@@ -1,5 +1,5 @@
 const Jimp = require('jimp');
-const { cv } = require('../');
+const { cv, cvTranslateError } = require('../');
 
 (async () => {
     try {
