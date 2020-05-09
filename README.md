@@ -49,9 +49,9 @@ This npm module uses the following versioning number:
 ```
 For Example
 ```
-4.3.0-1.0.0
+4.3.0-1
 OpenCV version 4.3.0
-OpenCV-WASM Module version 1.0.0
+OpenCV-WASM Module version 1
 ```
 
 ## Authors
