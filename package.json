@@ -1,6 +1,6 @@
 {
   "name": "opencv-wasm",
-  "version": "4.3.0-0.4.0",
+  "version": "4.3.0-1",
   "description": "Precompiled OpenCV 4.3.0 to JavaScript + WebAssembly for node.js environment",
   "main": "index.js",
   "directories": {
