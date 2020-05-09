@@ -1,5 +1,14 @@
 module.exports = {
+    /**
+     * OpenCV Object
+     */
     cv: require('./opencv.js'),
+
+    /**
+     * Translate Open CV error code into meaningful sentence
+     * @param {*} cv OpenCV object 
+     * @param {*} err Error code
+     */
     cvTranslateError: function (cv, err) {
         // Code modified from OpenCV TryIt playground
         // https://docs.opencv.org/3.4/d0/d84/tutorial_js_usage.html
