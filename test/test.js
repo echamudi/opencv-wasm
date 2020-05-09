@@ -10,6 +10,10 @@ describe('opencv-wasm', function () {
 
     it('can be loaded', function () {
         assert.isObject(cv);
+        assert.isFunction(cv.Scalar);
+        assert.isFunction(cv.Point);
+        assert.isFunction(cv.Mat);
+        assert.isFunction(cv.MatVector);
         assert.isFunction(cvTranslateError);
     });
 
