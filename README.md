@@ -1,6 +1,6 @@
 # OpenCV-WASM
 
-[![Build Status](https://travis-ci.org/ezhmd/opencv-wasm.svg?branch=master)](https://travis-ci.org/ezhmd/opencv-wasm)
+[![Build Status](https://travis-ci.org/echamudi/opencv-wasm.svg?branch=master)](https://travis-ci.org/echamudi/opencv-wasm)
 
 Precompiled OpenCV 4.3.0 to JavaScript + WebAssembly for node.js environment.
 
@@ -11,8 +11,8 @@ The entire OpenCV is already inside this package (opencv.js and opencv.wasm).
 
 | Code | Input | Output |
 |---|---|---|
-| [dilation.js](https://github.com/ezhmd/opencv-wasm/blob/master/examples/dilation.js) | ![image sample 1](https://github.com/ezhmd/opencv-wasm/blob/develop/examples/input/image-sample-1.jpg?raw=true) | ![dilation](https://github.com/ezhmd/opencv-wasm/blob/develop/examples/expected-output/dilation.png?raw=true) |
-| [templateMatching.js](https://github.com/ezhmd/opencv-wasm/blob/master/examples/templateMatching.js) | source:<br>![image sample 2](https://github.com/ezhmd/opencv-wasm/blob/develop/examples/input/image-sample-2.png?raw=true) <br>template:<br> ![image sample 2 template](https://github.com/ezhmd/opencv-wasm/blob/develop/examples/input/image-sample-2-template.png?raw=true) | ![template matching](https://github.com/ezhmd/opencv-wasm/blob/develop/examples/expected-output/template-matching.png?raw=true) |
+| [dilation.js](https://github.com/echamudi/opencv-wasm/blob/master/examples/dilation.js) | ![image sample 1](https://github.com/echamudi/opencv-wasm/blob/develop/examples/input/image-sample-1.jpg?raw=true) | ![dilation](https://github.com/echamudi/opencv-wasm/blob/develop/examples/expected-output/dilation.png?raw=true) |
+| [templateMatching.js](https://github.com/echamudi/opencv-wasm/blob/master/examples/templateMatching.js) | source:<br>![image sample 2](https://github.com/echamudi/opencv-wasm/blob/develop/examples/input/image-sample-2.png?raw=true) <br>template:<br> ![image sample 2 template](https://github.com/echamudi/opencv-wasm/blob/develop/examples/input/image-sample-2-template.png?raw=true) | ![template matching](https://github.com/echamudi/opencv-wasm/blob/develop/examples/expected-output/template-matching.png?raw=true) |
 
 ## Installation
 ```
@@ -25,7 +25,7 @@ Because this module is using (almost) the same code as the official OpenCV.js fo
 
 There are some minor initialization changes, because this module will be loaded synchronously instead of the OpenCV's default (asynchronously). 
 
-You can check the files inside [examples](https://github.com/ezhmd/opencv-wasm/tree/master/examples) folder as reference on how to initialize, loading images, and saving images.
+You can check the files inside [examples](https://github.com/echamudi/opencv-wasm/tree/master/examples) folder as reference on how to initialize, loading images, and saving images.
 
 ## Error Handling
 
@@ -56,13 +56,13 @@ OpenCV-WASM Module version 1
 
 ## Authors
 
-* **Ezzat Chamudi** - [ezhmd](https://github.com/ezhmd)
+* **Ezzat Chamudi** - [echamudi](https://github.com/echamudi)
 
-See also the list of [contributors](https://github.com/ezhmd/opencv-wasm/graphs/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/echamudi/opencv-wasm/graphs/contributors) who participated in this project.
 
 ## License
 
-Code and documentation copyright 2019 the [OpenCV-WASM Project Authors](https://github.com/ezhmd/opencv-wasm/graphs/contributors). 
+Code and documentation copyright 2019 the [OpenCV-WASM Project Authors](https://github.com/echamudi/opencv-wasm/graphs/contributors). 
 
 OpenCV-WASM code is licensed under [BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause). Images, logos, docs, and articles in this OpenCV-WASM project are released under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode).
 
