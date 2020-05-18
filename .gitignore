@@ -110,3 +110,6 @@ dist
 !/examples/test-output/.gitkeep
 
 /playground.js
+
+# The OpenCV git repo
+/utils/opencv
