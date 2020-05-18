@@ -1,15 +1,13 @@
-import * as _MiradaCV from './mirada/opencv/_types';
+import * as VanillaMiradaCV from './mirada/opencv/_types';
 import { FS } from './mirada/emscripten';
 
 // Import definitions from Mirada, except the definitions that are going to be overidden
-interface OmitMiradaCV {
-    MatVector
-}
+type OmitMiradaCV = "MatVector";
 
-type MiradaCV = Omit<typeof _MiradaCV, keyof OmitMiradaCV>;
+type MiradaCV = Omit<typeof VanillaMiradaCV, OmitMiradaCV>;
 
-// Add fixes from the mirada repo
-interface _OpenCVWASM extends MiradaCV {
+// Add fixes from the Mirada definitions
+interface OpenCVWASM extends MiradaCV {
     // Set any to clear the wrongly assumptions in _hacks.ts
 
     /** Undocumented, please refer to OpenCV.js Docs https://docs.opencv.org/4.3.0/ */
@@ -33,7 +31,7 @@ interface _OpenCVWASM extends MiradaCV {
      *   set: [Function: MatVector$set] { argCount: 2 }
      * }
      */
-    // MatVector: any;
+    MatVector: any;
 
     /** Undocumented, please refer to OpenCV.js Docs https://docs.opencv.org/4.3.0/ */
     OutputArray: any;
@@ -67,9 +65,8 @@ interface _OpenCVWASM extends MiradaCV {
 
     /** Undocumented, please refer to OpenCV.js Docs https://docs.opencv.org/4.3.0/ */
     Rect_: any;
-}
 
-interface OpenCVWASM extends _OpenCVWASM {
+    /** Emscripten FS */
     FS: FS;
 }
 
