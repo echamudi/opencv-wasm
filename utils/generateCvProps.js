@@ -39,4 +39,4 @@ keys.forEach(key => {
 
 });
 
-fs.writeFileSync('./opencv.d.ts', result, { encoding: 'utf8' });
+fs.writeFileSync('../types/opencv.d.ts', result, { encoding: 'utf8' });
