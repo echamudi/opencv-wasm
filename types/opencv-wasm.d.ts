@@ -11,7 +11,7 @@ interface OpenCVWASM extends MiradaCV {
     // Set any to clear the wrongly assumptions in _hacks.ts
 
     /** Undocumented, please refer to OpenCV.js Docs https://docs.opencv.org/4.3.0/ */
-    // InputArray: any;
+    InputArray: any;
 
     /** Undocumented, please refer to OpenCV.js Docs https://docs.opencv.org/4.3.0/ */
     InputArrayOfArrays: any;
