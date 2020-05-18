@@ -15,7 +15,7 @@
     "./globals.d.ts",
     "test_mat.js",
     "test_calib3d.js",
-    "test_features2d",
+    "test_features2d.js",
     "test_imgproc.js",
     "test_mat.js",
     "test_objdetect.js",
