@@ -1,4 +1,7 @@
 import { Mat as MiradaMat } from './types/mirada/opencv/Mat';
+import { RotatedRect as MiradaRotatedRect } from './types/mirada/opencv/RotatedRect';
+import { Rect as MiradaRect, PointVector as MiradaPointVector } from './types/mirada/opencv/_hacks';
+
 import { FS } from './types/mirada/emscripten';
 
 export * from './types/all-cv-prop';
@@ -69,4 +72,17 @@ export var _malloc: any;
 export class Mat extends MiradaMat {
     floatPtr: any;
     ushortAt: any;
+}
+
+export class RotatedRect extends MiradaRotatedRect {
+    static boundingRect2f: any;
+    static points: any;''
+}
+
+export class Rect extends MiradaRect {
+    public constructor(...arg: any);
+}
+
+export class PointVector extends MiradaPointVector {
+    size: any;
 }
