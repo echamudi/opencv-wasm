@@ -10,16 +10,24 @@ let keys = Object.keys(cv);
 
 let result = '';
 keys.forEach(key => {
-    /** @type {any} */
+    if (removeProps.indexOf(key) !== -1) return;
+
     // @ts-ignore
     let type = typeof cv[key];
-    let comment = '';
 
-    if (removeProps.indexOf(key) !== -1) comment = '// ';
+    if (type === 'string' || type === 'number' || type === 'boolean') {
+        result += `export var ${key}: ${type};\n`;
+    } else if (type === 'function') {
+        console.log(key);
+        result += `export var ${key}: any; // ${type}\n`;
+    } else if (type === 'object') {
+        result += `export var ${key}: any; // ${type}\n`;
+    } else if (type === 'undefined') {
+        result += `export var ${key}: any; // ${type}\n`;
+    } else {
+        throw new Error(key + ' ' + type);
+    }
 
-    if (type !== 'string' && type !== 'number') type = 'any';
-
-    result += `${comment}export var ${key}: ${type};\n`;
 });
 
 fs.writeFileSync('./opencv.d.ts', result, { encoding: 'utf8' });
