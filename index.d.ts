@@ -1,4 +1,4 @@
-import * as OpenCV from './opencv';
+import * as OpenCV from './types/opencv';
 
 /**
  * OpenCV Object

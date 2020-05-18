@@ -22,4 +22,4 @@ keys.forEach(key => {
     result += `${comment}export var ${key}: ${type};\n`;
 });
 
-fs.writeFileSync('./all-cv-prop.d.ts', result, { encoding: 'utf8' });
+fs.writeFileSync('./opencv.d.ts', result, { encoding: 'utf8' });
