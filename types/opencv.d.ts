@@ -1,354 +1,1052 @@
-// export var arguments: any;
+// Generated types by generateCvProps.js, don't edit this file
+
+
 export var thisProgram: string;
+
+/** function */
 export var quit: any;
+
+/** object */
 export var preRun: any;
+
+/** object */
 export var postRun: any;
+
+/** function */
 export var read: any;
+
+/** function */
 export var readBinary: any;
+
+/** function */
 export var inspect: any;
+
+/** object */
 export var HEAP8: any;
+
+/** object */
 export var HEAP16: any;
+
+/** object */
 export var HEAP32: any;
+
+/** object */
 export var HEAPU8: any;
+
+/** object */
 export var HEAPU16: any;
+
+/** object */
 export var HEAPU32: any;
+
+/** object */
 export var HEAPF32: any;
+
+/** object */
 export var HEAPF64: any;
+
+/** object */
 export var preloadedImages: any;
+
+/** object */
 export var preloadedAudios: any;
+
+/** object */
 export var asm: any;
+
+/** function */
 export var requestFullScreen: any;
+
+/** function */
 export var requestFullscreen: any;
+
+/** function */
 export var requestAnimationFrame: any;
+
+/** function */
 export var setCanvasSize: any;
+
+/** function */
 export var pauseMainLoop: any;
+
+/** function */
 export var resumeMainLoop: any;
+
+/** function */
 export var getUserMedia: any;
+
+/** function */
 export var createContext: any;
+
+/** function */
 export var FS_createFolder: any;
+
+/** function */
 export var FS_createPath: any;
+
+/** function */
 export var FS_createDataFile: any;
+
+/** function */
 export var FS_createPreloadedFile: any;
+
+/** function */
 export var FS_createLazyFile: any;
+
+/** function */
 export var FS_createLink: any;
+
+/** function */
 export var FS_createDevice: any;
+
+/** function */
 export var FS_unlink: any;
+
+/** function */
 export var InternalError: any;
+
+/** function */
 export var BindingError: any;
+
+/** function */
 export var getInheritedInstanceCount: any;
+
+/** function */
 export var getLiveInheritedInstances: any;
+
+/** function */
 export var flushPendingDeletes: any;
+
+/** function */
 export var setDelayFunction: any;
+
+/** function */
 export var UnboundTypeError: any;
+
+/** function */
 export var count_emval_handles: any;
+
+/** function */
 export var get_first_emval: any;
+
+/** function */
 export var __ZSt18uncaught_exceptionv: any;
+
+/** function */
 export var ___cxa_can_catch: any;
+
+/** function */
 export var ___cxa_demangle: any;
+
+/** function */
 export var ___cxa_is_pointer_type: any;
+
+/** function */
 export var ___errno_location: any;
+
+/** function */
 export var ___getTypeName: any;
+
+/** function */
 export var __get_environ: any;
+
+/** undefined */
 export var _emscripten_replace_memory: any;
+
+/** function */
 export var _free: any;
+
+/** function */
 export var _llvm_bswap_i32: any;
+
+/** function */
 export var _malloc: any;
+
+/** function */
 export var _memcpy: any;
+
+/** function */
 export var _memmove: any;
+
+/** function */
 export var _memset: any;
+
+/** function */
 export var _pthread_cond_broadcast: any;
+
+/** function */
 export var _rintf: any;
+
+/** function */
 export var _sbrk: any;
+
+/** function */
 export var establishStackSpace: any;
+
+/** function */
 export var globalCtors: any;
+
+/** function */
 export var stackAlloc: any;
+
+/** function */
 export var stackRestore: any;
+
+/** function */
 export var stackSave: any;
+
+/** function */
 export var dynCall_di: any;
+
+/** function */
 export var dynCall_dii: any;
+
+/** function */
 export var dynCall_diiddi: any;
+
+/** function */
 export var dynCall_diii: any;
+
+/** function */
 export var dynCall_diiid: any;
+
+/** function */
 export var dynCall_diiiddi: any;
+
+/** function */
 export var dynCall_diiii: any;
+
+/** function */
 export var dynCall_diiiid: any;
+
+/** function */
 export var dynCall_diiiii: any;
+
+/** function */
 export var dynCall_diiiiii: any;
+
+/** function */
 export var dynCall_diiiiiii: any;
+
+/** function */
 export var dynCall_diiiiiiii: any;
+
+/** function */
 export var dynCall_diiiiiiiiii: any;
+
+/** function */
 export var dynCall_diiiiiiiiiii: any;
+
+/** function */
 export var dynCall_diiiiiiiiiiii: any;
+
+/** function */
 export var dynCall_diiiiiiiiiiiii: any;
+
+/** function */
 export var dynCall_fi: any;
+
+/** function */
 export var dynCall_fii: any;
+
+/** function */
 export var dynCall_fiii: any;
+
+/** function */
 export var dynCall_fiiii: any;
+
+/** function */
 export var dynCall_fiiiii: any;
+
+/** function */
 export var dynCall_i: any;
+
+/** function */
 export var dynCall_ii: any;
+
+/** function */
 export var dynCall_iid: any;
+
+/** function */
 export var dynCall_iidi: any;
+
+/** function */
 export var dynCall_iidiiii: any;
+
+/** function */
 export var dynCall_iif: any;
+
+/** function */
 export var dynCall_iiff: any;
+
+/** function */
 export var dynCall_iifff: any;
+
+/** function */
 export var dynCall_iiffff: any;
+
+/** function */
 export var dynCall_iii: any;
+
+/** function */
 export var dynCall_iiid: any;
+
+/** function */
 export var dynCall_iiidd: any;
+
+/** function */
 export var dynCall_iiiddi: any;
+
+/** function */
 export var dynCall_iiiddii: any;
+
+/** function */
 export var dynCall_iiiddiid: any;
+
+/** function */
 export var dynCall_iiiddiiid: any;
+
+/** function */
 export var dynCall_iiidi: any;
+
+/** function */
 export var dynCall_iiidii: any;
+
+/** function */
 export var dynCall_iiidiii: any;
+
+/** function */
 export var dynCall_iiidiiii: any;
+
+/** function */
 export var dynCall_iiidiiiii: any;
+
+/** function */
 export var dynCall_iiif: any;
+
+/** function */
 export var dynCall_iiifi: any;
+
+/** function */
 export var dynCall_iiifii: any;
+
+/** function */
 export var dynCall_iiifiii: any;
+
+/** function */
 export var dynCall_iiifiiii: any;
+
+/** function */
 export var dynCall_iiifiiiii: any;
+
+/** function */
 export var dynCall_iiifiiiiii: any;
+
+/** function */
 export var dynCall_iiifiiiiiii: any;
+
+/** function */
 export var dynCall_iiii: any;
+
+/** function */
 export var dynCall_iiiid: any;
+
+/** function */
 export var dynCall_iiiif: any;
+
+/** function */
 export var dynCall_iiiiff: any;
+
+/** function */
 export var dynCall_iiiiffi: any;
+
+/** function */
 export var dynCall_iiiifi: any;
+
+/** function */
 export var dynCall_iiiifii: any;
+
+/** function */
 export var dynCall_iiiifiii: any;
+
+/** function */
 export var dynCall_iiiii: any;
+
+/** function */
 export var dynCall_iiiiid: any;
+
+/** function */
 export var dynCall_iiiiidd: any;
+
+/** function */
 export var dynCall_iiiiiddi: any;
+
+/** function */
 export var dynCall_iiiiiddid: any;
+
+/** function */
 export var dynCall_iiiiiddidd: any;
+
+/** function */
 export var dynCall_iiiiiddiddi: any;
+
+/** function */
 export var dynCall_iiiiidi: any;
+
+/** function */
 export var dynCall_iiiiidii: any;
+
+/** function */
 export var dynCall_iiiiidiid: any;
+
+/** function */
 export var dynCall_iiiiif: any;
+
+/** function */
 export var dynCall_iiiiifi: any;
+
+/** function */
 export var dynCall_iiiiifii: any;
+
+/** function */
 export var dynCall_iiiiifiii: any;
+
+/** function */
 export var dynCall_iiiiii: any;
+
+/** function */
 export var dynCall_iiiiiid: any;
+
+/** function */
 export var dynCall_iiiiiidi: any;
+
+/** function */
 export var dynCall_iiiiiidid: any;
+
+/** function */
 export var dynCall_iiiiiididi: any;
+
+/** function */
 export var dynCall_iiiiiiff: any;
+
+/** function */
 export var dynCall_iiiiiiffi: any;
+
+/** function */
 export var dynCall_iiiiiifiididiii: any;
+
+/** function */
 export var dynCall_iiiiiii: any;
+
+/** function */
 export var dynCall_iiiiiiii: any;
+
+/** function */
 export var dynCall_iiiiiiiididiii: any;
+
+/** function */
 export var dynCall_iiiiiiiii: any;
+
+/** function */
 export var dynCall_iiiiiiiiii: any;
+
+/** function */
 export var dynCall_iiiiiiiiiiiii: any;
+
+/** function */
 export var dynCall_iiiiij: any;
+
+/** function */
 export var dynCall_ji: any;
+
+/** function */
 export var dynCall_jii: any;
+
+/** function */
 export var dynCall_jiii: any;
+
+/** function */
 export var dynCall_jiiii: any;
+
+/** function */
 export var dynCall_jiji: any;
+
+/** function */
 export var dynCall_v: any;
+
+/** function */
 export var dynCall_vdii: any;
+
+/** function */
 export var dynCall_vdiii: any;
+
+/** function */
 export var dynCall_vi: any;
+
+/** function */
 export var dynCall_vid: any;
+
+/** function */
 export var dynCall_vidi: any;
+
+/** function */
 export var dynCall_vididdi: any;
+
+/** function */
 export var dynCall_vididdii: any;
+
+/** function */
 export var dynCall_vidii: any;
+
+/** function */
 export var dynCall_vidiii: any;
+
+/** function */
 export var dynCall_vif: any;
+
+/** function */
 export var dynCall_viff: any;
+
+/** function */
 export var dynCall_vifff: any;
+
+/** function */
 export var dynCall_viffff: any;
+
+/** function */
 export var dynCall_vifi: any;
+
+/** function */
 export var dynCall_vii: any;
+
+/** function */
 export var dynCall_viid: any;
+
+/** function */
 export var dynCall_viidd: any;
+
+/** function */
 export var dynCall_viiddi: any;
+
+/** function */
 export var dynCall_viiddid: any;
+
+/** function */
 export var dynCall_viiddidd: any;
+
+/** function */
 export var dynCall_viiddiddd: any;
+
+/** function */
 export var dynCall_viiddidddd: any;
+
+/** function */
 export var dynCall_viiddii: any;
+
+/** function */
 export var dynCall_viiddiid: any;
+
+/** function */
 export var dynCall_viiddiii: any;
+
+/** function */
 export var dynCall_viiddiiid: any;
+
+/** function */
 export var dynCall_viidi: any;
+
+/** function */
 export var dynCall_viididdi: any;
+
+/** function */
 export var dynCall_viididdii: any;
+
+/** function */
 export var dynCall_viididi: any;
+
+/** function */
 export var dynCall_viididii: any;
+
+/** function */
 export var dynCall_viidii: any;
+
+/** function */
 export var dynCall_viidiii: any;
+
+/** function */
 export var dynCall_viidiiid: any;
+
+/** function */
 export var dynCall_viidiiii: any;
+
+/** function */
 export var dynCall_viidiiiii: any;
+
+/** function */
 export var dynCall_viif: any;
+
+/** function */
 export var dynCall_viifi: any;
+
+/** function */
 export var dynCall_viifii: any;
+
+/** function */
 export var dynCall_viifiii: any;
+
+/** function */
 export var dynCall_viifiiii: any;
+
+/** function */
 export var dynCall_viifiiiii: any;
+
+/** function */
 export var dynCall_viifiiiiii: any;
+
+/** function */
 export var dynCall_viifiiiiiii: any;
+
+/** function */
 export var dynCall_viii: any;
+
+/** function */
 export var dynCall_viiid: any;
+
+/** function */
 export var dynCall_viiidd: any;
+
+/** function */
 export var dynCall_viiiddd: any;
+
+/** function */
 export var dynCall_viiidddd: any;
+
+/** function */
 export var dynCall_viiiddddi: any;
+
+/** function */
 export var dynCall_viiiddddii: any;
+
+/** function */
 export var dynCall_viiidddi: any;
+
+/** function */
 export var dynCall_viiidddii: any;
+
+/** function */
 export var dynCall_viiidddiii: any;
+
+/** function */
 export var dynCall_viiidddiiii: any;
+
+/** function */
 export var dynCall_viiiddi: any;
+
+/** function */
 export var dynCall_viiiddid: any;
+
+/** function */
 export var dynCall_viiiddidd: any;
+
+/** function */
 export var dynCall_viiiddiddd: any;
+
+/** function */
 export var dynCall_viiiddidddd: any;
+
+/** function */
 export var dynCall_viiiddii: any;
+
+/** function */
 export var dynCall_viiiddiii: any;
+
+/** function */
 export var dynCall_viiiddiiid: any;
+
+/** function */
 export var dynCall_viiiddiiii: any;
+
+/** function */
 export var dynCall_viiiddiiiid: any;
+
+/** function */
 export var dynCall_viiidi: any;
+
+/** function */
 export var dynCall_viiididi: any;
+
+/** function */
 export var dynCall_viiididii: any;
+
+/** function */
 export var dynCall_viiidii: any;
+
+/** function */
 export var dynCall_viiidiiddi: any;
+
+/** function */
 export var dynCall_viiidiii: any;
+
+/** function */
 export var dynCall_viiidiiid: any;
+
+/** function */
 export var dynCall_viiidiiii: any;
+
+/** function */
 export var dynCall_viiidiiiidi: any;
+
+/** function */
 export var dynCall_viiif: any;
+
+/** function */
 export var dynCall_viiiff: any;
+
+/** function */
 export var dynCall_viiiffi: any;
+
+/** function */
 export var dynCall_viiifi: any;
+
+/** function */
 export var dynCall_viiifii: any;
+
+/** function */
 export var dynCall_viiifiii: any;
+
+/** function */
 export var dynCall_viiii: any;
+
+/** function */
 export var dynCall_viiiid: any;
+
+/** function */
 export var dynCall_viiiidd: any;
+
+/** function */
 export var dynCall_viiiiddd: any;
+
+/** function */
 export var dynCall_viiiidddd: any;
+
+/** function */
 export var dynCall_viiiiddddi: any;
+
+/** function */
 export var dynCall_viiiiddddii: any;
+
+/** function */
 export var dynCall_viiiidddi: any;
+
+/** function */
 export var dynCall_viiiidddii: any;
+
+/** function */
 export var dynCall_viiiidddiii: any;
+
+/** function */
 export var dynCall_viiiidddiiii: any;
+
+/** function */
 export var dynCall_viiiiddi: any;
+
+/** function */
 export var dynCall_viiiiddid: any;
+
+/** function */
 export var dynCall_viiiiddidd: any;
+
+/** function */
 export var dynCall_viiiiddiddi: any;
+
+/** function */
 export var dynCall_viiiiddii: any;
+
+/** function */
 export var dynCall_viiiiddiii: any;
+
+/** function */
 export var dynCall_viiiiddiiid: any;
+
+/** function */
 export var dynCall_viiiiddiiii: any;
+
+/** function */
 export var dynCall_viiiiddiiiid: any;
+
+/** function */
 export var dynCall_viiiidi: any;
+
+/** function */
 export var dynCall_viiiidii: any;
+
+/** function */
 export var dynCall_viiiidiid: any;
+
+/** function */
 export var dynCall_viiiidiidd: any;
+
+/** function */
 export var dynCall_viiiidiiddi: any;
+
+/** function */
 export var dynCall_viiiidiii: any;
+
+/** function */
 export var dynCall_viiiidiiii: any;
+
+/** function */
 export var dynCall_viiiidiiiidi: any;
+
+/** function */
 export var dynCall_viiiif: any;
+
+/** function */
 export var dynCall_viiiifi: any;
+
+/** function */
 export var dynCall_viiiifii: any;
+
+/** function */
 export var dynCall_viiiifiii: any;
+
+/** function */
 export var dynCall_viiiii: any;
+
+/** function */
 export var dynCall_viiiiid: any;
+
+/** function */
 export var dynCall_viiiiidd: any;
+
+/** function */
 export var dynCall_viiiiiddi: any;
+
+/** function */
 export var dynCall_viiiiidi: any;
+
+/** function */
 export var dynCall_viiiiidid: any;
+
+/** function */
 export var dynCall_viiiiididi: any;
+
+/** function */
 export var dynCall_viiiiidii: any;
+
+/** function */
 export var dynCall_viiiiidiid: any;
+
+/** function */
 export var dynCall_viiiiidiidd: any;
+
+/** function */
 export var dynCall_viiiiidiiddi: any;
+
+/** function */
 export var dynCall_viiiiidiii: any;
+
+/** function */
 export var dynCall_viiiiidiiii: any;
+
+/** function */
 export var dynCall_viiiiidiiiii: any;
+
+/** function */
 export var dynCall_viiiiif: any;
+
+/** function */
 export var dynCall_viiiiiff: any;
+
+/** function */
 export var dynCall_viiiiiffi: any;
+
+/** function */
 export var dynCall_viiiiifi: any;
+
+/** function */
 export var dynCall_viiiiifii: any;
+
+/** function */
 export var dynCall_viiiiii: any;
+
+/** function */
 export var dynCall_viiiiiid: any;
+
+/** function */
 export var dynCall_viiiiiidd: any;
+
+/** function */
 export var dynCall_viiiiiiddi: any;
+
+/** function */
 export var dynCall_viiiiiidi: any;
+
+/** function */
 export var dynCall_viiiiiidii: any;
+
+/** function */
 export var dynCall_viiiiiidiii: any;
+
+/** function */
 export var dynCall_viiiiiidiiii: any;
+
+/** function */
 export var dynCall_viiiiiidiiiii: any;
+
+/** function */
 export var dynCall_viiiiiif: any;
+
+/** function */
 export var dynCall_viiiiiifi: any;
+
+/** function */
 export var dynCall_viiiiiii: any;
+
+/** function */
 export var dynCall_viiiiiiid: any;
+
+/** function */
 export var dynCall_viiiiiiidd: any;
+
+/** function */
 export var dynCall_viiiiiiiddi: any;
+
+/** function */
 export var dynCall_viiiiiiidi: any;
+
+/** function */
 export var dynCall_viiiiiiii: any;
+
+/** function */
 export var dynCall_viiiiiiiii: any;
+
+/** function */
 export var dynCall_viiiiiiiiidd: any;
+
+/** function */
 export var dynCall_viiiiiiiiii: any;
+
+/** function */
 export var dynCall_viiiiiiiiiid: any;
+
+/** function */
 export var dynCall_viiiiiiiiiiddi: any;
+
+/** function */
 export var dynCall_viiiiiiiiiii: any;
+
+/** function */
 export var dynCall_viiiiiiiiiiid: any;
+
+/** function */
 export var dynCall_viiiij: any;
+
+/** function */
 export var dynCall_viiij: any;
+
+/** function */
 export var dynCall_viijii: any;
+
+/** function */
 export var dynCall_vij: any;
+
+/** function */
 export var dynCall_viji: any;
+
+/** function */
 export var getMemory: any;
+
+/** function */
 export var addRunDependency: any;
+
+/** function */
 export var removeRunDependency: any;
+
+/** function */
 export var then: any;
+
+/** function */
 export var run: any;
+
+/** function */
 export var abort: any;
-export var noExitRuntime: any;
-export var calledRun: any;
+export var noExitRuntime: boolean;
+export var calledRun: boolean;
+
+/** undefined */
 export var stdin: any;
+
+/** undefined */
 export var stdout: any;
+
+/** undefined */
 export var stderr: any;
+
+/** function */
 export var IntVector: any;
+
+/** function */
 export var FloatVector: any;
+
+/** function */
 export var DoubleVector: any;
+
+/** function */
 export var PointVector: any;
+
+/** function */
 export var MatVector: any;
+
+/** function */
 export var RectVector: any;
+
+/** function */
 export var KeyPointVector: any;
+
+/** function */
 export var DMatchVector: any;
+
+/** function */
 export var DMatchVectorVector: any;
+
+/** function */
 export var Mat: any;
+
+/** function */
 export var rotatedRectPoints: any;
+
+/** function */
 export var rotatedRectBoundingRect: any;
+
+/** function */
 export var rotatedRectBoundingRect2f: any;
+
+/** function */
 export var exceptionFromPtr: any;
+
+/** function */
 export var minEnclosingCircle: any;
+
+/** function */
 export var floodFill: any;
+
+/** function */
 export var minMaxLoc: any;
+
+/** function */
 export var morphologyDefaultBorderValue: any;
+
+/** function */
 export var CV_MAT_DEPTH: any;
+
+/** function */
 export var CamShift: any;
+
+/** function */
 export var meanShift: any;
+
+/** function */
 export var getBuildInformation: any;
 export var CV_8UC1: number;
 export var CV_8UC2: number;
@@ -387,194 +1085,572 @@ export var CV_32F: number;
 export var CV_64F: number;
 export var INT_MIN: number;
 export var INT_MAX: number;
+
+/** function */
 export var Canny: any;
+
+/** function */
 export var Canny1: any;
+
+/** function */
 export var GaussianBlur: any;
+
+/** function */
 export var HoughCircles: any;
+
+/** function */
 export var HoughLines: any;
+
+/** function */
 export var HoughLinesP: any;
+
+/** function */
 export var Laplacian: any;
+
+/** function */
 export var Rodrigues: any;
+
+/** function */
 export var Scharr: any;
+
+/** function */
 export var Sobel: any;
+
+/** function */
 export var absdiff: any;
+
+/** function */
 export var adaptiveThreshold: any;
+
+/** function */
 export var add: any;
+
+/** function */
 export var addWeighted: any;
+
+/** function */
 export var approxPolyDP: any;
+
+/** function */
 export var arcLength: any;
+
+/** function */
 export var bilateralFilter: any;
+
+/** function */
 export var bitwise_and: any;
+
+/** function */
 export var bitwise_not: any;
+
+/** function */
 export var bitwise_or: any;
+
+/** function */
 export var bitwise_xor: any;
+
+/** function */
 export var blur: any;
+
+/** function */
 export var boundingRect: any;
+
+/** function */
 export var boxFilter: any;
+
+/** function */
 export var calcBackProject: any;
+
+/** function */
 export var calcHist: any;
+
+/** function */
 export var calcOpticalFlowFarneback: any;
+
+/** function */
 export var calcOpticalFlowPyrLK: any;
+
+/** function */
 export var calibrateCameraExtended: any;
+
+/** function */
 export var cartToPolar: any;
+
+/** function */
 export var circle: any;
+
+/** function */
 export var compare: any;
+
+/** function */
 export var compareHist: any;
+
+/** function */
 export var connectedComponents: any;
+
+/** function */
 export var connectedComponentsWithStats: any;
+
+/** function */
 export var contourArea: any;
+
+/** function */
 export var convertScaleAbs: any;
+
+/** function */
 export var convexHull: any;
+
+/** function */
 export var convexityDefects: any;
+
+/** function */
 export var copyMakeBorder: any;
+
+/** function */
 export var cornerHarris: any;
+
+/** function */
 export var cornerMinEigenVal: any;
+
+/** function */
 export var countNonZero: any;
+
+/** function */
 export var cvtColor: any;
+
+/** function */
 export var demosaicing: any;
+
+/** function */
 export var determinant: any;
+
+/** function */
 export var dft: any;
+
+/** function */
 export var dilate: any;
+
+/** function */
 export var distanceTransform: any;
+
+/** function */
 export var distanceTransformWithLabels: any;
+
+/** function */
 export var divide: any;
+
+/** function */
 export var divide1: any;
+
+/** function */
 export var drawContours: any;
+
+/** function */
 export var drawFrameAxes: any;
+
+/** function */
 export var drawKeypoints: any;
+
+/** function */
 export var drawMatches: any;
+
+/** function */
 export var drawMatchesKnn: any;
+
+/** function */
 export var eigen: any;
+
+/** function */
 export var ellipse: any;
+
+/** function */
 export var ellipse1: any;
+
+/** function */
 export var ellipse2Poly: any;
+
+/** function */
 export var equalizeHist: any;
+
+/** function */
 export var erode: any;
+
+/** function */
 export var estimateAffine2D: any;
+
+/** function */
 export var exp: any;
+
+/** function */
 export var fillConvexPoly: any;
+
+/** function */
 export var fillPoly: any;
+
+/** function */
 export var filter2D: any;
+
+/** function */
 export var findContours: any;
+
+/** function */
 export var findHomography: any;
+
+/** function */
 export var findTransformECC: any;
+
+/** function */
 export var fitEllipse: any;
+
+/** function */
 export var fitLine: any;
+
+/** function */
 export var flip: any;
+
+/** function */
 export var gemm: any;
+
+/** function */
 export var getAffineTransform: any;
+
+/** function */
 export var getDefaultNewCameraMatrix: any;
+
+/** function */
 export var getOptimalDFTSize: any;
+
+/** function */
 export var getPerspectiveTransform: any;
+
+/** function */
 export var getRotationMatrix2D: any;
+
+/** function */
 export var getStructuringElement: any;
+
+/** function */
 export var goodFeaturesToTrack: any;
+
+/** function */
 export var goodFeaturesToTrack1: any;
+
+/** function */
 export var grabCut: any;
+
+/** function */
 export var groupRectangles: any;
+
+/** function */
 export var hconcat: any;
+
+/** function */
 export var inRange: any;
+
+/** function */
 export var initUndistortRectifyMap: any;
+
+/** function */
 export var inpaint: any;
+
+/** function */
 export var integral: any;
+
+/** function */
 export var integral2: any;
+
+/** function */
 export var invert: any;
+
+/** function */
 export var isContourConvex: any;
+
+/** function */
 export var kmeans: any;
+
+/** function */
 export var line: any;
+
+/** function */
 export var log: any;
+
+/** function */
 export var magnitude: any;
+
+/** function */
 export var matchShapes: any;
+
+/** function */
 export var matchTemplate: any;
+
+/** function */
 export var max: any;
+
+/** function */
 export var mean: any;
+
+/** function */
 export var meanStdDev: any;
+
+/** function */
 export var medianBlur: any;
+
+/** function */
 export var merge: any;
+
+/** function */
 export var min: any;
+
+/** function */
 export var minAreaRect: any;
+
+/** function */
 export var mixChannels: any;
+
+/** function */
 export var moments: any;
+
+/** function */
 export var morphologyEx: any;
+
+/** function */
 export var multiply: any;
+
+/** function */
 export var norm: any;
+
+/** function */
 export var norm1: any;
+
+/** function */
 export var normalize: any;
+
+/** function */
 export var perspectiveTransform: any;
+
+/** function */
 export var pointPolygonTest: any;
+
+/** function */
 export var polarToCart: any;
+
+/** function */
 export var pow: any;
+
+/** function */
 export var putText: any;
+
+/** function */
 export var pyrDown: any;
+
+/** function */
 export var pyrUp: any;
+
+/** function */
 export var randn: any;
+
+/** function */
 export var randu: any;
+
+/** function */
 export var rectangle: any;
+
+/** function */
 export var rectangle1: any;
+
+/** function */
 export var reduce: any;
+
+/** function */
 export var remap: any;
+
+/** function */
 export var repeat: any;
+
+/** function */
 export var resize: any;
+
+/** function */
 export var rotate: any;
+
+/** function */
 export var sepFilter2D: any;
+
+/** function */
 export var setIdentity: any;
+
+/** function */
 export var setRNGSeed: any;
+
+/** function */
 export var solve: any;
+
+/** function */
 export var solvePoly: any;
+
+/** function */
 export var split: any;
+
+/** function */
 export var sqrt: any;
+
+/** function */
 export var subtract: any;
+
+/** function */
 export var threshold: any;
+
+/** function */
 export var trace: any;
+
+/** function */
 export var transform: any;
+
+/** function */
 export var transpose: any;
+
+/** function */
 export var undistort: any;
+
+/** function */
 export var vconcat: any;
+
+/** function */
 export var warpAffine: any;
+
+/** function */
 export var warpPerspective: any;
+
+/** function */
 export var warpPolar: any;
+
+/** function */
 export var watershed: any;
+
+/** function */
 export var blobFromImage: any;
+
+/** function */
 export var readNet: any;
+
+/** function */
 export var readNet1: any;
+
+/** function */
 export var readNetFromCaffe: any;
+
+/** function */
 export var readNetFromCaffe1: any;
+
+/** function */
 export var readNetFromDarknet: any;
+
+/** function */
 export var readNetFromDarknet1: any;
+
+/** function */
 export var readNetFromONNX: any;
+
+/** function */
 export var readNetFromONNX1: any;
+
+/** function */
 export var readNetFromTensorflow: any;
+
+/** function */
 export var readNetFromTensorflow1: any;
+
+/** function */
 export var readNetFromTorch: any;
+
+/** function */
 export var MergeMertens: any;
+
+/** function */
 export var CalibrateRobertson: any;
+
+/** function */
 export var dnn_Net: any;
+
+/** function */
 export var MergeDebevec: any;
+
+/** function */
 export var BackgroundSubtractor: any;
+
+/** function */
 export var AlignMTB: any;
+
+/** function */
 export var HOGDescriptor: any;
+
+/** function */
 export var KAZE: any;
+
+/** function */
 export var BackgroundSubtractorMOG2: any;
+
+/** function */
 export var TonemapMantiuk: any;
+
+/** function */
 export var Tonemap: any;
+
+/** function */
 export var CLAHE: any;
+
+/** function */
 export var CalibrateCRF: any;
+
+/** function */
 export var AKAZE: any;
+
+/** function */
 export var MergeExposures: any;
+
+/** function */
 export var CalibrateDebevec: any;
+
+/** function */
 export var Algorithm: any;
+
+/** function */
 export var Feature2D: any;
+
+/** function */
 export var MergeRobertson: any;
+
+/** function */
 export var GFTTDetector: any;
+
+/** function */
 export var DescriptorMatcher: any;
+
+/** function */
 export var MSER: any;
+
+/** function */
 export var BFMatcher: any;
+
+/** function */
 export var FastFeatureDetector: any;
+
+/** function */
 export var AgastFeatureDetector: any;
+
+/** function */
 export var CascadeClassifier: any;
+
+/** function */
 export var TonemapReinhard: any;
+
+/** function */
 export var TonemapDrago: any;
+
+/** function */
 export var ORB: any;
+
+/** function */
 export var BRISK: any;
 export var ACCESS_FAST: number;
 export var ACCESS_MASK: number;
@@ -1336,18 +2412,48 @@ export var DNN_TARGET_VULKAN: number;
 export var CALIB_CHECK_COND: number;
 export var CALIB_FIX_SKEW: number;
 export var CALIB_RECOMPUTE_EXTRINSIC: number;
+
+/** object */
 export var FS: any;
+
+/** function */
 export var imread: any;
+
+/** function */
 export var imshow: any;
+
+/** function */
 export var VideoCapture: any;
+
+/** function */
 export var Range: any;
+
+/** function */
 export var Point: any;
+
+/** function */
 export var Size: any;
+
+/** function */
 export var Rect: any;
+
+/** function */
 export var RotatedRect: any;
+
+/** function */
 export var Scalar: any;
+
+/** function */
 export var MinMaxLoc: any;
+
+/** function */
 export var Circle: any;
+
+/** function */
 export var TermCriteria: any;
+
+/** function */
 export var matFromArray: any;
+
+/** function */
 export var matFromImageData: any;
