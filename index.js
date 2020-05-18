@@ -1,6 +1,12 @@
+/**
+ * @typedef {import { CV } from './types/opencv'} CV
+ * @typedef {import { CV } from './types/opencv'} FS
+ */
+
 module.exports = {
     /**
      * OpenCV Object
+     * @type {CV}
      */
     cv: require('./opencv.js'),
 

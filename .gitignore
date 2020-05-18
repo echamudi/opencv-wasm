@@ -103,8 +103,10 @@ dist
 # TernJS port file
 .tern-port
 
-opencv
-examples/temp.png
+# OpenCV WASM
+/examples/temp.png
 
-examples/test-output/*
-!examples/test-output/.gitkeep
+/examples/test-output/*
+!/examples/test-output/.gitkeep
+
+/playground.js
