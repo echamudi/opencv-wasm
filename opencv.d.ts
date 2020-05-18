@@ -1,4 +1,7 @@
+import { Mat as MiradaMat } from './types/mirada/opencv/Mat';
 import { FS } from './types/mirada/emscripten';
+
+export * from './types/all-cv-prop';
 
 export * from './types/mirada/opencv/_types';
 
@@ -59,3 +62,11 @@ export var Size2l: any;
 
 /** Undocumented, please refer to OpenCV.js Docs https://docs.opencv.org/4.3.0/ */
 export var Rect_: any;
+
+// More hacks after testing using OpenCV tests
+export var _malloc: any;
+
+export class Mat extends MiradaMat {
+    floatPtr: any;
+    ushortAt: any;
+}
