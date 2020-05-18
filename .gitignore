@@ -103,8 +103,25 @@ dist
 # TernJS port file
 .tern-port
 
-opencv
-examples/temp.png
+# OpenCV WASM
+/examples/temp.png
 
-examples/test-output/*
-!examples/test-output/.gitkeep
+/examples/test-output/*
+!/examples/test-output/.gitkeep
+
+/playground.js
+
+# The OpenCV git repo
+/utils/opencv
+
+# Duplicated tests from OpenCV
+/haarcascade_frontalface_default.xml
+/test_calib3d.js
+/test_features2d.js
+/test_imgproc.js
+/test_mat.js
+/test_objdetect.js
+/test_photo.js
+/test_utils.js
+/test_video.js
+/tests.js
