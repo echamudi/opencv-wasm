@@ -30,6 +30,9 @@
     "jsdom": "^16.2.2",
     "mocha": "^7.1.2",
     "pixelmatch": "^5.2.0",
-    "@types/node": "^14.0.1"
+    "@types/node": "^14.0.1",
+    "ansi-colors": "^4.1.1",
+    "minimist": "^1.2.0",
+    "node-qunit": "latest"
   }
 }
