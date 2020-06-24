@@ -1,5 +1,5 @@
 const Jimp = require('jimp');
-const { cv, cvTranslateError } = require('../');
+const { cv, cvTranslateError } = require('../'); // replace with require('opencv-wasm') in prod
 
 (async () => {
     try {
