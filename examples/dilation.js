@@ -1,7 +1,7 @@
 // modified code from https://docs.opencv.org/master/dc/de6/tutorial_js_nodejs.html
 
 const Jimp = require('jimp');
-const { cv } = require('../'); // replace with require('opencv-wasm'); in prod
+const { cv } = require('../'); // replace with require('opencv-wasm') in prod
 
 (async () => {
     let jimpSrc = await Jimp.read(__dirname + '/input/image-sample-1.jpg');
