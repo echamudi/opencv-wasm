@@ -21,7 +21,7 @@ npm install opencv-wasm
 
 ## Usage
 
-Because this module is using (almost) the same code as the official OpenCV.js for the web, you can use the same documentation at the web: https://docs.opencv.org/3.4/d5/d10/tutorial_js_root.html
+Because this module is using (almost) the same code as the official OpenCV.js for the web, you can use the same documentation at the web: https://docs.opencv.org/4.3.0/d5/d10/tutorial_js_root.html
 
 There are some minor initialization changes, because this module will be loaded synchronously instead of the OpenCV's default (asynchronously). 
 
