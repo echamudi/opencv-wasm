@@ -13,7 +13,6 @@ arch:
 
 os: 
   - linux
-  - windows
 
 install:
   - npm install
