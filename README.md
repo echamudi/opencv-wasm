@@ -54,6 +54,27 @@ OpenCV version 4.3.0
 OpenCV-WASM Module version 1
 ```
 
+## Development
+
+### Building
+
+Run the following script on macOS or Linux (tested on Ubuntu). You need docker on the system.
+
+```
+npm install
+cd ./utils
+sh ./build.sh
+cd ..
+```
+
+### Testing
+
+After completing the build script, you can run the test
+
+```
+npm test
+```
+
 ## Contributing
 
 This project is following [git-flow branching model](https://github.com/echamudi/echamudi-docs/blob/master/git-strategy/gitflow.png). 
