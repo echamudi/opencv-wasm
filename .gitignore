@@ -111,6 +111,9 @@ dist
 
 /playground.js
 
+/opencv.js
+/opencv.wasm
+
 # The OpenCV git repo
 /utils/opencv
 
