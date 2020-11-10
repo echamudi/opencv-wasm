@@ -6,7 +6,7 @@ const { PNG } = require('pngjs');
 const pixelmatch = require('pixelmatch');
 
 describe('opencv-wasm', function () {
-    this.timeout(20000);
+    this.timeout(40000);
 
     it('can be loaded', function () {
         assert.isObject(cv);
