@@ -1,16 +1,24 @@
 language: node_js
 
+sudo: required
+
+services:
+  - docker
+
 node_js:
   - "12"
-  - "10"
+
+arch:
+  - amd64
 
 os: 
-  - osx
   - linux
-  - windows
 
 install:
   - npm install
+  - cd ./utils
+  - sh ./build.sh
+  - cd ..
 
 script:
   - npm test

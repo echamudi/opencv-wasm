@@ -21,7 +21,7 @@ npm install opencv-wasm
 
 ## Usage
 
-Because this module is using (almost) the same code as the official OpenCV.js for the web, you can use the same documentation at the web: https://docs.opencv.org/3.4/d5/d10/tutorial_js_root.html
+Because this module is using (almost) the same code as the official OpenCV.js for the web, you can use the same documentation at the web: https://docs.opencv.org/4.3.0/d5/d10/tutorial_js_root.html
 
 There are some minor initialization changes, because this module will be loaded synchronously instead of the OpenCV's default (asynchronously). 
 
@@ -52,6 +52,27 @@ For Example
 4.3.0-1
 OpenCV version 4.3.0
 OpenCV-WASM Module version 1
+```
+
+## Development
+
+### Building
+
+Run the following script on macOS or Linux (tested on Ubuntu). You need docker on the system.
+
+```
+npm install
+cd ./utils
+sh ./build.sh
+cd ..
+```
+
+### Testing
+
+After completing the build script, you can run the test
+
+```
+npm test
 ```
 
 ## Contributing
