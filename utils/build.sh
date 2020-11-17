@@ -7,21 +7,19 @@ docker run --rm --workdir /code -v "$PWD":/code "trzeci/emscripten:sdk-tag-1.38.
 
 # Backup the default build_wasm resukt
 cp -a ./build_wasm/ ./build_wasm_backup
-
-# test the compilation result (use node LTS)
-cd build_wasm/bin
-npm install
-node tests.js # make sure 0 failed
+find ./build_wasm/ -type d -exec chmod 755 {} \;
+find ./build_wasm/ -type f -exec chmod 644 {} \;
 
 # separate wasm
-cd ../../..
+cd ../
 node seperateBinaryFile.js
 cd opencv/build_wasm/bin
 
 # beautify opencv.js using js-beautify
 npx js-beautify opencv.js -r
 
-# test again
+# Test using built in test
+npm install
 node tests.js # make sure 0 failed
 
 # copy results to root
