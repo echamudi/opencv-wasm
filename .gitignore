@@ -128,3 +128,4 @@ dist
 /test_utils.js
 /test_video.js
 /tests.js
+/build_wasm_test

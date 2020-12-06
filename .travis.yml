@@ -16,9 +16,16 @@ os:
 
 install:
   - npm install
-  - cd ./utils
-  - sh ./build.sh
-  - cd ..
+
+  # Compile OpenCV
+  - (cd ./utils && bash ./build.sh)
+
+  # Separate Wasm
+  - (cd ./build_wasm_test/bin && npm install)
+
 
 script:
+  # Run opencv's test
+  - (cd ./build_wasm_test/bin && node tests.js)
+  # Run opencv-wasm's test
   - npm test
