@@ -11,8 +11,8 @@ The entire OpenCV library is already inside this package (opencv.js and opencv.w
 
 | Code | Input | Output |
 |---|---|---|
-| [dilation.js](https://github.com/echamudi/opencv-wasm/blob/master/examples/dilation.js) | ![image sample 1](https://github.com/echamudi/opencv-wasm/blob/develop/examples/input/image-sample-1.jpg?raw=true) | ![dilation](https://github.com/echamudi/opencv-wasm/blob/develop/examples/expected-output/dilation.png?raw=true) |
-| [templateMatching.js](https://github.com/echamudi/opencv-wasm/blob/master/examples/templateMatching.js) | source:<br>![image sample 2](https://github.com/echamudi/opencv-wasm/blob/develop/examples/input/image-sample-2.png?raw=true) <br>template:<br> ![image sample 2 template](https://github.com/echamudi/opencv-wasm/blob/develop/examples/input/image-sample-2-template.png?raw=true) | ![template matching](https://github.com/echamudi/opencv-wasm/blob/develop/examples/expected-output/template-matching.png?raw=true) |
+| [dilation.js](https://github.com/echamudi/opencv-wasm/blob/master/examples/dilation.js) | ![image sample 1](https://github.com/echamudi/opencv-wasm/blob/master/examples/input/image-sample-1.jpg?raw=true) | ![dilation](https://github.com/echamudi/opencv-wasm/blob/master/examples/expected-output/dilation.png?raw=true) |
+| [templateMatching.js](https://github.com/echamudi/opencv-wasm/blob/master/examples/templateMatching.js) | source:<br>![image sample 2](https://github.com/echamudi/opencv-wasm/blob/master/examples/input/image-sample-2.png?raw=true) <br>template:<br> ![image sample 2 template](https://github.com/echamudi/opencv-wasm/blob/master/examples/input/image-sample-2-template.png?raw=true) | ![template matching](https://github.com/echamudi/opencv-wasm/blob/master/examples/expected-output/template-matching.png?raw=true) |
 
 ## Installation
 ```
