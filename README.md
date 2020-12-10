@@ -1,10 +1,10 @@
-# OpenCV-WASM
+# OpenCV-Wasm
 
 [![Build Status](https://travis-ci.org/echamudi/opencv-wasm.svg?branch=master)](https://travis-ci.org/echamudi/opencv-wasm)
 
 Precompiled OpenCV 4.3.0 to JavaScript + WebAssembly for node.js environment.
 
-In this WASM-compiled OpenCV, there's no need to have OpenCV installed in the machine or using node-gyp.
+In this Wasm-compiled OpenCV, there's no need to have OpenCV installed in the machine or using node-gyp.
 The entire OpenCV library is already inside this package (opencv.js and opencv.wasm).
 
 ## Examples
@@ -51,7 +51,7 @@ For Example
 ```
 4.3.0-1
 OpenCV version 4.3.0
-OpenCV-WASM Module version 1
+OpenCV-Wasm Module version 1
 ```
 
 ## Development
@@ -83,8 +83,8 @@ See also the list of [contributors](https://github.com/echamudi/opencv-wasm/grap
 
 ## License
 
-Copyright © 2020 [Ezzat Chamudi](https://github.com/echamudi) and [OpenCV-WASM Project Authors](https://github.com/echamudi/opencv-wasm/graphs/contributors)
+Copyright © 2020 [Ezzat Chamudi](https://github.com/echamudi) and [OpenCV-Wasm Project Authors](https://github.com/echamudi/opencv-wasm/graphs/contributors)
 
-OpenCV-WASM code is licensed under [BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause). Images, logos, docs, and articles in this project are released under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode).
+OpenCV-Wasm code is licensed under [BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause). Images, logos, docs, and articles in this project are released under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode).
 
 Libraries, dependencies, and tools used in this project are tied with their licenses.
