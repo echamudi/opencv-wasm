@@ -62,9 +62,7 @@ Run the following script on macOS or Linux (tested on Ubuntu). You need docker o
 
 ```
 npm install
-cd ./utils
-sh ./build.sh
-cd ..
+(cd ./utils && sh ./build.sh)
 ```
 
 ### Testing
