@@ -20,7 +20,7 @@ install:
   # Compile OpenCV
   - (cd ./utils && bash ./build.sh)
 
-  # Separate Wasm
+  # Install test node modules
   - (cd ./build_wasm_test/bin && npm install)
 
 
