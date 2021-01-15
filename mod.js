@@ -1,3 +1,5 @@
+/// <deno-types path="./mod.d.ts" />
+
 export { cv } from './opencv-deno.js';
 
 export function cvTranslateError (cv, err) {
