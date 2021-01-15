@@ -114,6 +114,8 @@ dist
 /opencv.js
 /opencv.wasm
 
+/utils/build_wasm
+
 # The OpenCV git repo
 /utils/opencv
 
