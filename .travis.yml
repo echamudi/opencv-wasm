@@ -20,6 +20,9 @@ install:
   # Compile OpenCV
   - (cd ./utils && bash ./build.sh)
 
+  # Create types
+  - (cd utils && node generateCvProps.js)
+
   # Install test node modules
   - (cd ./build_wasm_test/bin && npm install)
 
