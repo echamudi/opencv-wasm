@@ -1,7 +1,7 @@
-import * as OpenCV from './types/opencv.ts';
-import {cv as $cv} from './opencv-deno.js';
+import * as OpenCV from 'https://unpkg.com/opencv-wasm@4.3.0-9.alpha.6/types/opencv.ts';
+import {cv as _cv} from 'https://unpkg.com/opencv-wasm@4.3.0-9.alpha.6/opencv-deno.js';
 
-export const cv: typeof OpenCV = $cv;
+export const cv: typeof OpenCV = _cv;
 
 /**
  * Translate error number from OpenCV into a meaningful message
