@@ -33,6 +33,7 @@ console.log(mat.data8S);
 cv.transpose(mat, mat);
 console.log('cols =', mat.cols, '; rows =', mat.rows);
 console.log(mat.data8S);
+
 /*
 cols = 3 ; rows = 2
 Int8Array(6) [ 1, 2, 3, 4, 5, 6 ]
@@ -59,6 +60,7 @@ console.log(mat.data8S);
 cv.transpose(mat, mat);
 console.log('cols =', mat.cols, '; rows =', mat.rows);
 console.log(mat.data8S);
+
 /*
 cols = 3 ; rows = 2
 Int8Array(6) [ 1, 2, 3, 4, 5, 6 ]
