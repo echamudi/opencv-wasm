@@ -141,4 +141,6 @@ Copyright © 2020 [Ezzat Chamudi](https://github.com/echamudi) and [OpenCV-Wasm 
 
 OpenCV-Wasm code is licensed under [BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause). Images, logos, docs, and articles in this project are released under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode).
 
+[OpenCV License](https://opencv.org/license/).
+
 Libraries, dependencies, and tools used in this project are tied with their licenses.
