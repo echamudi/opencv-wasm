@@ -1,4 +1,4 @@
-# git clone --branch 4.3.0 --depth 1 https://github.com/opencv/opencv.git
+git clone --branch 4.3.0 --depth 1 https://github.com/opencv/opencv.git
 
 # Build
 (
