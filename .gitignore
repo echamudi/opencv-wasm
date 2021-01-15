@@ -113,6 +113,7 @@ dist
 
 # Generated Types
 /types/opencv.d.ts
+/types/opencv.ts
 
 # OpenCV-Wasm Node
 /opencv.js
