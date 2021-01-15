@@ -1,4 +1,4 @@
-import { cv, cvTranslateError } from '../../mod.js';
+import { cv, cvTranslateError } from '../../mod.ts';
 import { assertStrictEquals, assertEquals } from "https://deno.land/std@0.83.0/testing/asserts.ts";
 
 Deno.test("Basic test", () => {
