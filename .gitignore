@@ -103,25 +103,34 @@ dist
 # TernJS port file
 .tern-port
 
-# OpenCV WASM
+#
+# OpenCV-Wasm
+#
+
+# OpenCV Binaries
+/opencv.wasm
+/opencv-bin.js
+
+# Generated Types
+/types/opencv.d.ts
+
+# OpenCV-Wasm Node
+/opencv.js
+
+# OpenCV-Wasm Deno
+/opencv-deno.js
+
+# Test files
 /examples/temp.png
 
 /examples/test-output/*
 !/examples/test-output/.gitkeep
 
-/playground.js
-
-/opencv.js
-/opencv.wasm
-
-# backup build_wasm
-/utils/build_wasm
-
-# generated types
-/types/opencv.d.ts
-
-# The OpenCV git repo
+# Git repo
 /utils/opencv
+
+# Code tranformation temp
+/utils/build_wasm
 
 # Duplicated tests from OpenCV
 /haarcascade_frontalface_default.xml
@@ -135,3 +144,7 @@ dist
 /test_video.js
 /tests.js
 /build_wasm_test
+
+# Playgrounds
+/playground.js
+/playground.ts
