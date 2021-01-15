@@ -12,21 +12,21 @@ git clone --branch 4.3.0 --depth 1 https://github.com/opencv/opencv.git
 # Copy compilation result
 cp -a ./opencv/build_wasm/ ./build_wasm
 
-# Create Wasm file
-node seperateBinaryFile.js
+# Transpile opencv.js files
+node opencvJsMod.js
 
 # Beautify JS
 (
     cd ./build_wasm/bin &&
-    npx js-beautify opencv.js -r
+    npx js-beautify opencv.js -r &&
+    npx js-beautify opencv-deno.js -r
 )
-
-# Modify opencv.js
-node opencvJsMod.js
 
 # Copy bins to root
 (
     cp ./build_wasm/bin/opencv.wasm ../opencv.wasm &&
+    cp ./build_wasm/bin/opencv-bin.js ../opencv-bin.js &&
     cp ./build_wasm/bin/opencv.js ../opencv.js &&
+    cp ./build_wasm/bin/opencv-deno.js ../opencv-deno.js &&
     cp -r ./build_wasm/ ../build_wasm_test
 )
