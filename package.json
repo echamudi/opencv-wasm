@@ -32,6 +32,7 @@
     "@types/node": "^14.0.1",
     "chai": "^4.2.0",
     "jimp": "^0.10.2",
+    "js-beautify": "^1.13.4",
     "mocha": "^7.1.2",
     "pixelmatch": "^5.2.0"
   }
