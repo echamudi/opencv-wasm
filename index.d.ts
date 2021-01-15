@@ -10,4 +10,4 @@ export const cv: typeof OpenCV;
  * @param cvObject OpenCV object
  * @param err OpenCV error number 
  */
-export function cvTranslateError(cvObject: typeof OpenCV, err: any): string | Error;
+export function cvTranslateError(cvObject: typeof OpenCV, err: any): string | Error | undefined;

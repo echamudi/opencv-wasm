@@ -4,7 +4,7 @@ module.exports = {
         // Code modified from OpenCV TryIt playground
         // https://docs.opencv.org/3.4/d0/d84/tutorial_js_usage.html
 
-        let errorStatement;
+        let errorStatement = undefined;
 
         if (typeof err === 'undefined') {
             errorStatement = '';
