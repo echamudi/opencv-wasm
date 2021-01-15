@@ -9,7 +9,7 @@ git clone --branch 4.3.0 --depth 1 https://github.com/opencv/opencv.git
     docker run --rm --workdir /code -v "$PWD":/code "trzeci/emscripten:sdk-tag-1.39.4-64bit" python ./platforms/js/build_js.py build_wasm --build_wasm --build_test --build_flags "-s WASM=1 -s WASM_ASYNC_COMPILATION=0 -s SINGLE_FILE=0 "
 )
 
-# Copy compilatio result
+# Copy compilation result
 cp -a ./opencv/build_wasm/ ./build_wasm
 
 # Create Wasm file
