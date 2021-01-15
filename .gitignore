@@ -114,7 +114,11 @@ dist
 /opencv.js
 /opencv.wasm
 
+# backup build_wasm
 /utils/build_wasm
+
+# generated types
+/types/opencv.d.ts
 
 # The OpenCV git repo
 /utils/opencv
