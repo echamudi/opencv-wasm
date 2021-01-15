@@ -1,4 +1,4 @@
-# Complete Building & Publishing
+# Complete Building & Publishing Recommendation
 
 - Compile from scratch using docker and build.sh
 - Generate types
