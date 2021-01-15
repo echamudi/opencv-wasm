@@ -10,12 +10,19 @@
     "test": "npx mocha ./test/test.js"
   },
   "files": [
-    "index.js",
-    "index.d.ts",
-    "opencv.js",
-    "opencv.wasm",
-    "opencv.d.ts",
-    "types"
+    "/index.js",
+    "/index.d.ts",
+    "/mod.js",
+    "/mod.d.ts",
+
+    "/opencv.js",
+    "/opencv.d.ts",
+    "/opencv.wasm",
+
+    "/opencv-deno.js",
+    "/opencv-bin.js",
+
+    "/types"
   ],
   "repository": {
     "type": "git",
