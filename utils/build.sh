@@ -21,6 +21,9 @@ node seperateBinaryFile.js
     npx js-beautify opencv.js -r
 )
 
+# Modify opencv.js
+node opencvJsMod.js
+
 # Copy bins to root
 (
     cp ./build_wasm/bin/opencv.wasm ../opencv.wasm &&
