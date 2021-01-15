@@ -2,20 +2,69 @@
 
 [![Build Status](https://travis-ci.org/echamudi/opencv-wasm.svg?branch=master)](https://travis-ci.org/echamudi/opencv-wasm)
 
-Precompiled OpenCV 4.3.0 to JavaScript + WebAssembly for node.js environment.
+Precompiled OpenCV to JavaScript + WebAssembly for node.js and deno environment. 🦕
 
-In this Wasm-compiled OpenCV, there's no need to have OpenCV installed in the machine. The entire OpenCV library is already inside this package (`opencv.js` and `opencv.wasm`). This module has zero dependencies.
+In this Wasm-compiled OpenCV, there's no need to have OpenCV installed in the machine. The entire OpenCV library is already inside this package (`opencv.js` and `opencv.wasm`).
+
+This module has zero dependencies.
 
 ## Examples
 
 | Code | Input | Output |
 |---|---|---|
-| [dilation.js](https://github.com/echamudi/opencv-wasm/blob/master/examples/dilation.js) | ![image sample 1](https://github.com/echamudi/opencv-wasm/blob/master/examples/input/image-sample-1.jpg?raw=true) | ![dilation](https://github.com/echamudi/opencv-wasm/blob/master/examples/expected-output/dilation.png?raw=true) |
-| [templateMatching.js](https://github.com/echamudi/opencv-wasm/blob/master/examples/templateMatching.js) | source:<br>![image sample 2](https://github.com/echamudi/opencv-wasm/blob/master/examples/input/image-sample-2.png?raw=true) <br>template:<br> ![image sample 2 template](https://github.com/echamudi/opencv-wasm/blob/master/examples/input/image-sample-2-template.png?raw=true) | ![template matching](https://github.com/echamudi/opencv-wasm/blob/master/examples/expected-output/template-matching.png?raw=true) |
+| [dilation.js](https://github.com/echamudi/opencv-wasm/blob/master/examples/dilation.js) (node)| ![image sample 1](https://github.com/echamudi/opencv-wasm/blob/master/examples/input/image-sample-1.jpg?raw=true) | ![dilation](https://github.com/echamudi/opencv-wasm/blob/master/examples/expected-output/dilation.png?raw=true) |
+| [templateMatching.js](https://github.com/echamudi/opencv-wasm/blob/master/examples/templateMatching.js) (node) | source:<br>![image sample 2](https://github.com/echamudi/opencv-wasm/blob/master/examples/input/image-sample-2.png?raw=true) <br>template:<br> ![image sample 2 template](https://github.com/echamudi/opencv-wasm/blob/master/examples/input/image-sample-2-template.png?raw=true) | ![template matching](https://github.com/echamudi/opencv-wasm/blob/master/examples/expected-output/template-matching.png?raw=true) |
 
 ## Installation
+
+### node
+
 ```
 npm install opencv-wasm
+```
+Code example:
+```js
+const { cv, cvTranslateError } = require('./index.js');
+
+let mat = cv.matFromArray(2, 3, cv.CV_8UC1, [1, 2, 3, 4, 5, 6]);
+console.log('cols =', mat.cols, '; rows =', mat.rows);
+console.log(mat.data8S);
+
+cv.transpose(mat, mat);
+console.log('cols =', mat.cols, '; rows =', mat.rows);
+console.log(mat.data8S);
+/*
+cols = 3 ; rows = 2
+Int8Array(6) [ 1, 2, 3, 4, 5, 6 ]
+cols = 2 ; rows = 3
+Int8Array(6) [ 1, 4, 2, 5, 3, 6 ]
+*/
+```
+
+### deno
+
+```ts
+import { cv, cvTranslateError } from 'https://deno.land/x/opencv@v4.3.0-10/mod.ts';
+// Change the @<version> with the latest or any version you desire.
+// Check the available versions here: https://deno.land/x/opencv.
+```
+Code example:
+```ts
+import { cv, cvTranslateError } from 'https://deno.land/x/opencv@v4.3.0-10/mod.ts';
+
+let mat = cv.matFromArray(2, 3, cv.CV_8UC1, [1, 2, 3, 4, 5, 6]);
+console.log('cols =', mat.cols, '; rows =', mat.rows);
+console.log(mat.data8S);
+
+cv.transpose(mat, mat);
+console.log('cols =', mat.cols, '; rows =', mat.rows);
+console.log(mat.data8S);
+/*
+cols = 3 ; rows = 2
+Int8Array(6) [ 1, 2, 3, 4, 5, 6 ]
+cols = 2 ; rows = 3
+Int8Array(6) [ 1, 4, 2, 5, 3, 6 ]
+*/
 ```
 
 ## Usage
@@ -48,9 +97,9 @@ This npm module uses the following versioning number:
 ```
 For Example
 ```
-4.3.0-1
+4.3.0-9
 OpenCV version 4.3.0
-OpenCV-Wasm Module version 1
+OpenCV-Wasm Module version 9
 ```
 
 ## Development
