@@ -1,5 +1,5 @@
-import * as OpenCV from 'https://unpkg.com/opencv-wasm@4.3.0-9/types/opencv.ts';
-import {cv as _cv} from 'https://unpkg.com/opencv-wasm@4.3.0-9/opencv-deno.js';
+import * as OpenCV from 'https://unpkg.com/opencv-wasm@4.3.0-10/types/opencv.ts';
+import {cv as _cv} from 'https://unpkg.com/opencv-wasm@4.3.0-10/opencv-deno.js';
 
 export const cv: typeof OpenCV = _cv;
 
