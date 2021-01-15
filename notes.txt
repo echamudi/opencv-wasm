@@ -1,0 +1,18 @@
+# Complete Building & Publishing
+
+- Compile from scratch using docker and build.sh
+- Generate types
+- Test using OpenCV’s node test
+- Test using node scripts at '/test'
+- Test using deno scripts at '/test'
+- Try node types validity in playground
+- Try deno types validity in playground
+- Increment all versions
+    - package
+    - package-lock
+    - deno's mod.ts
+    - README installation
+- Dry run publishing NPM module
+- Publish NPM module
+- Try to use the deno using unpkg (https://unpkg.com/opencv-wasm@<version>/mod.ts), see if the type is working.
+- If unpkg is working fine, then tag it.
