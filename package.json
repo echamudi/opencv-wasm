@@ -1,6 +1,6 @@
 {
   "name": "opencv-wasm",
-  "version": "4.3.0-8",
+  "version": "4.3.0-9.alpha.6",
   "description": "Precompiled OpenCV 4.3.0 to JavaScript + WebAssembly for node.js environment",
   "main": "index.js",
   "directories": {
@@ -10,12 +10,15 @@
     "test": "npx mocha ./test/test.js"
   },
   "files": [
-    "index.js",
-    "index.d.ts",
-    "opencv.js",
-    "opencv.wasm",
-    "opencv.d.ts",
-    "types"
+    "/index.js",
+    "/index.d.ts",
+    "/mod.ts",
+    "/opencv.js",
+    "/opencv.d.ts",
+    "/opencv.wasm",
+    "/opencv-deno.js",
+    "/opencv-bin.js",
+    "/types"
   ],
   "repository": {
     "type": "git",
