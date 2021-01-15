@@ -40,4 +40,4 @@ keys.forEach(key => {
 });
 
 fs.mkdirSync('../types', { recursive: true});
-fs.writeFileSync('../types/opencv.d.ts', result, { encoding: 'utf8' });
+fs.writeFileSync('../types/opencv.ts', result, { encoding: 'utf8' });
