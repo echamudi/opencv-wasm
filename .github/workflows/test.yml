@@ -1,0 +1,35 @@
+name: Test
+
+on: [push, pull_request, workflow_dispatch]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the repo
+        uses: actions/checkout@v2
+
+      - name: Set up Node v14
+        uses: actions/setup-node@v1
+        with:
+          node-version: '14.x'
+          registry-url: 'https://registry.npmjs.org'
+
+      - run: npm install
+        name: Install Node dependencies
+      
+      - run: (cd ./utils && sh ./build.sh)
+        name: Build opencv-wasm
+
+      - run: (cd utils && node generateCvProps.js)
+        name: generateCvProps
+      
+      - run: (cd ./build_wasm_test/bin && npm install)
+        name: Install Node dependencies for test provided by OpenCV
+
+      - run: (cd ./build_wasm_test/bin && node tests.js)
+        name: Run test provided by OpenCV
+
+      - run: npm test
+        name: Run this's repo's test
+
