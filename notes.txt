@@ -14,5 +14,5 @@
     - README installation
 - Dry run publishing NPM module
 - Publish NPM module
-- Try to use the deno using unpkg (https://unpkg.com/opencv-wasm@<version>/mod.ts), see if the type is working.
+- Try to use the deno using jsDelivr (https://cdn.jsdelivr.net/npm/opencv-wasm@<version>/mod.ts), see if the type is working.
 - If unpkg is working fine, then tag it.
